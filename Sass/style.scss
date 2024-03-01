@@ -1,0 +1,39 @@
+$primary-color: #9356DC;
+$secondary-color: #FF79DA ;
+$Tertiaire_color: #99E2D0;
+
+
+*{
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body{
+    display:flex;
+    justify-content:center;
+}
+
+#main-container{
+
+    width:100%;
+    max-width: 1440px;
+    box-sizing: border-box;
+}
+
+header {
+
+    display:flex;
+    justify-content:center;
+    img{
+
+        width: 162px; 
+        padding: 14px 89px 13px 89px;
+    }
+
+}
+
+.location-search{
+
+    height:50px;
+}
