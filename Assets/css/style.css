@@ -108,3 +108,14 @@ header img {
   position: relative;
   right: 35px;
 }
+
+.restaurants {
+  background-color: #F6F6F6;
+}
+.restaurants article > img {
+  width: 100%;
+}
+.restaurants article {
+  height: 251px;
+  margin: 0 18px;
+}
