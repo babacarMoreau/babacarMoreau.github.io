@@ -1,4 +1,30 @@
 @charset "UTF-8";
+footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 22px 25px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+footer h4 {
+  color: white;
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+footer .gap {
+  display: flex;
+  gap: 10px;
+}
+
 * {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -44,6 +70,8 @@ main {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  position: relative;
+  top: -59px;
 }
 main h1 {
   font-family: "Shrikhand", serif;
@@ -51,11 +79,15 @@ main h1 {
   font-style: normal;
   font-size: 25px;
 }
+main h5 {
+  font-style: normal;
+  font-weight: 300;
+}
 main .section-titre-restaurant {
   display: flex;
   justify-content: center;
   gap: 25px;
-  padding: 32px 17px;
+  padding: 32px 17px 0px 17px;
 }
 main .card {
   display: flex;
@@ -68,7 +100,7 @@ main .card {
   margin-left: 10px;
   margin-right: 10px;
 }
-main .entrées {
+main .entrées, main .plats, main .desserts {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -81,4 +113,15 @@ main .titre-section {
 }
 main .titre-section img {
   width: 40px;
+}
+main button {
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  color: white;
+  width: 186px;
+  padding: 16px 48px;
+  font-weight: 500;
+  margin: auto;
+  border: none;
 }
