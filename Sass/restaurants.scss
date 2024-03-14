@@ -25,11 +25,21 @@ header{
     display:flex;
     gap:42px;
     justify-content: center;
+  
+
 
     a{
         text-decoration: none;
         padding-top: 14px;
         padding-left: 25px;
+
+        @include media-min("desktop-up"){
+           
+            position:relative;
+            right:35%;
+    
+        }   
+    
     }
 
     .logo-ohmyfood{
@@ -61,6 +71,14 @@ main{
     gap:40px;
     position:relative;
     top:-59px;
+
+    @include media-min("desktop-up"){
+           
+       width:70%;
+       margin:auto;
+
+    }   
+
 
     h1{
         font-family: "Shrikhand", serif;

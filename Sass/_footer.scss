@@ -1,3 +1,5 @@
+@import 'mixins_media_queries';
+
 footer{
 
     background-color: $background-gray-black;
@@ -5,6 +7,21 @@ footer{
     flex-direction: column;
     gap: 16px;
     padding: 22px 25px;
+
+    @include media-min("tablet-up"){
+           
+        flex-direction: row-reverse;
+        gap:50px;
+
+    }   
+
+    @include media-min("desktop-up"){
+           
+        padding:30px 25px;
+
+    }   
+
+
 
     a {
 
@@ -14,6 +31,14 @@ footer{
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+
+        @include media-min("tablet-up"){
+           
+            width:155px;
+    
+        }   
+    
+
     }
 
     h4{
@@ -29,6 +54,27 @@ footer{
     .gap{
         display:flex;
         gap:10px;
+    }
+
+    .liens{
+
+        @include media-min("tablet-up"){
+           
+            display:flex;
+            gap:10px;
+    
+        }  
+        
+        img{
+
+            @include media-min("desktop-up"){
+           
+                width:12px;
+        
+            }   
+        
+        }
+    
     }
 
 }

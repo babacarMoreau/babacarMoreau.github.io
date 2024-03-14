@@ -6,6 +6,17 @@ footer {
   gap: 16px;
   padding: 22px 25px;
 }
+@media screen and (min-width: 768px) {
+  footer {
+    flex-direction: row-reverse;
+    gap: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    padding: 30px 25px;
+  }
+}
 footer a {
   text-decoration: none;
   color: white;
@@ -13,6 +24,11 @@ footer a {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+@media screen and (min-width: 768px) {
+  footer a {
+    width: 155px;
+  }
 }
 footer h4 {
   color: white;
@@ -23,6 +39,17 @@ footer h4 {
 footer .gap {
   display: flex;
   gap: 10px;
+}
+@media screen and (min-width: 768px) {
+  footer .liens {
+    display: flex;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer .liens img {
+    width: 12px;
+  }
 }
 
 * {
@@ -51,6 +78,12 @@ header a {
   padding-top: 14px;
   padding-left: 25px;
 }
+@media screen and (min-width: 1024px) {
+  header a {
+    position: relative;
+    right: 35%;
+  }
+}
 header .logo-ohmyfood {
   width: 162px;
   padding: 14px 89px 13px 0px;
@@ -72,6 +105,12 @@ main {
   gap: 40px;
   position: relative;
   top: -59px;
+}
+@media screen and (min-width: 1024px) {
+  main {
+    width: 70%;
+    margin: auto;
+  }
 }
 main h1 {
   font-family: "Shrikhand", serif;

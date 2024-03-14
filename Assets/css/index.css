@@ -5,6 +5,17 @@ footer {
   gap: 16px;
   padding: 22px 25px;
 }
+@media screen and (min-width: 768px) {
+  footer {
+    flex-direction: row-reverse;
+    gap: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    padding: 30px 25px;
+  }
+}
 footer a {
   text-decoration: none;
   color: white;
@@ -12,6 +23,11 @@ footer a {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+@media screen and (min-width: 768px) {
+  footer a {
+    width: 155px;
+  }
 }
 footer h4 {
   color: white;
@@ -22,6 +38,17 @@ footer h4 {
 footer .gap {
   display: flex;
   gap: 10px;
+}
+@media screen and (min-width: 768px) {
+  footer .liens {
+    display: flex;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer .liens img {
+    width: 12px;
+  }
 }
 
 * {
@@ -57,11 +84,6 @@ header img {
   align-items: center;
   gap: 17px;
 }
-.location-search .dot {
-  display: block;
-  width: 20px;
-  height: 20px;
-}
 .location-search input {
   background-color: #EAEAEA;
   border: none;
@@ -93,12 +115,23 @@ header img {
   text-align: center;
   width: 275px;
 }
+@media screen and (min-width: 1024px) {
+  .info-menu h1 {
+    width: 645px;
+  }
+}
 
 .fonctionnement {
   display: flex;
   flex-direction: column;
   padding: 40px 0;
   gap: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .fonctionnement {
+    padding: 50px 180px;
+    gap: 25px;
+  }
 }
 .fonctionnement h1 {
   margin-left: 20px;
@@ -107,6 +140,12 @@ header img {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+@media screen and (min-width: 768px) {
+  .fonctionnement .etapes {
+    flex-direction: row;
+    gap: 5px;
+  }
 }
 .fonctionnement .etapes article {
   display: flex;
@@ -120,6 +159,11 @@ header img {
   margin: auto;
   font-weight: 500;
   font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  .fonctionnement .etapes article {
+    width: 22%;
+  }
 }
 .fonctionnement .etapes article div {
   display: flex;
@@ -141,6 +185,12 @@ header img {
   flex-direction: column;
   gap: 20px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 1024px) {
+  .restaurants {
+    padding: 0 180px;
+    margin-bottom: 30px;
+  }
 }
 .restaurants h1 {
   margin-top: 35px;
@@ -187,13 +237,38 @@ header img {
   flex-direction: column;
   gap: 18px;
 }
+@media screen and (min-width: 1024px) {
+  .restaurants .global-range {
+    gap: 50px;
+  }
+}
 .restaurants .premiere-range {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
+@media screen and (min-width: 768px) {
+  .restaurants .premiere-range {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurants .premiere-range {
+    gap: 100px;
+  }
+}
 .restaurants .deuxieme-range {
   display: flex;
   flex-direction: column;
   gap: 18px;
+}
+@media screen and (min-width: 768px) {
+  .restaurants .deuxieme-range {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurants .deuxieme-range {
+    gap: 100px;
+  }
 }

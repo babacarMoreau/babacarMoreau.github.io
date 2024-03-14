@@ -1,6 +1,7 @@
 
 @import 'variables';
 @import 'footer';
+@import 'mixins_media_queries';
 
 *{
     margin:0;
@@ -41,12 +42,6 @@ header {
     align-items:center;
     gap:17px;
 
-    .dot{
-        display:block;
-        width:20px;
-        height:20px;
-    }
-
     input{
 
         background-color: #EAEAEA;
@@ -85,6 +80,13 @@ header {
 
         text-align: center;
         width:275px;
+
+        @include media-min("desktop-up"){
+           
+            width:645px;
+    
+        }   
+    
     }
 }
 
@@ -94,6 +96,13 @@ header {
     flex-direction:column;
     padding:40px 0;
     gap:20px;
+
+    @include media-min("desktop-up"){
+           
+        padding:50px 180px;
+        gap:25px;
+    }   
+
 
     h1{
 
@@ -105,6 +114,12 @@ header {
         display:flex;
         flex-direction: column;
         gap:15px;
+
+        @include media-min("tablet-up"){
+
+            flex-direction: row;
+            gap:5px;
+        }
 
         article{
 
@@ -119,6 +134,11 @@ header {
             margin:auto;
             font-weight: 500;
             font-size: 14px;
+
+            @include media-min("tablet-up"){
+
+                width:22%;
+            }
 
             div{
                 display:flex;
@@ -147,6 +167,14 @@ header {
     flex-direction: column;
     gap:20px;
     padding-bottom:60px;
+
+    @include media-min("desktop-up"){
+           
+        padding: 0 180px;
+        margin-bottom: 30px;
+
+    }   
+
 
     h1{
 
@@ -206,6 +234,13 @@ header {
         display:flex;
         flex-direction: column;
         gap: 18px;
+
+        @include media-min("desktop-up"){
+           
+            gap:50px;
+    
+        }   
+    
     }
 
     .premiere-range{
@@ -213,6 +248,20 @@ header {
         display:flex;
         flex-direction: column;
         gap:18px;
+
+        @include media-min("tablet-up"){
+           
+            flex-direction: row;
+
+        }
+
+        @include media-min("desktop-up"){
+           
+            gap:100px;
+    
+        }   
+    
+
     }
 
     .deuxieme-range{
@@ -220,7 +269,22 @@ header {
         display:flex;
         flex-direction: column;
         gap:18px;
+
+        @include media-min("tablet-up"){
+           
+            flex-direction: row;
+    
+        }   
+
+        @include media-min("desktop-up"){
+           
+            gap:100px;
+    
+        }   
+    
+    
     }
 
+   
 }
 
