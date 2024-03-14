@@ -103,12 +103,12 @@ header img {
 .fonctionnement h1 {
   margin-left: 20px;
 }
-.fonctionnement__etapes {
+.fonctionnement .etapes {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.fonctionnement__etapes article {
+.fonctionnement .etapes article {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -121,7 +121,7 @@ header img {
   font-weight: 500;
   font-size: 14px;
 }
-.fonctionnement__etapes article div {
+.fonctionnement .etapes article div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,13 +159,13 @@ header img {
 }
 .restaurants .rectangle {
   position: absolute;
-  left: 240px;
-  top: 10px;
+  left: 69%;
+  top: 5%;
 }
 .restaurants .nouveau {
   position: absolute;
-  left: 255px;
-  top: 19px;
+  left: 73%;
+  top: 9%;
   z-index: 1;
 }
 .restaurants a {

@@ -100,7 +100,7 @@ header {
        margin-left:20px; 
     }
 
-    &__etapes{
+    .etapes{
 
         display:flex;
         flex-direction: column;
@@ -172,15 +172,15 @@ header {
     .rectangle{
 
         position:absolute;
-        left:240px;
-        top:10px;
+        left: 69%;   //240px
+        top: 5%;    //10px
     }
 
     .nouveau{
 
         position:absolute;
-        left:255px;
-        top:19px;
+        left:73%;   //255px
+        top: 9%;   //19px
         z-index:1;
 
     }
