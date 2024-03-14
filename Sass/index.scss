@@ -161,6 +161,7 @@ header {
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         object-fit: cover;
+        
 
     }
 
@@ -169,22 +170,20 @@ header {
         position:relative;
     }
 
-    .rectangle{
+    .popup{
 
         position:absolute;
-        left: 69%;   //240px
-        top: 5%;    //10px
+        background-color: #99E2D0;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        color:#008766;
+        width: 80px;
+        height: 29px;
+        top:5%;
+        left:70%;
     }
-
-    .nouveau{
-
-        position:absolute;
-        left:73%;   //255px
-        top: 9%;   //19px
-        z-index:1;
-
-    }
-
+ 
      a {
         width:90%;
         margin: 0 18px;
