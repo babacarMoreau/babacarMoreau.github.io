@@ -249,6 +249,23 @@ header img {
   text-decoration: none;
   color: black;
 }
+.restaurants .deux-coeurs {
+  position: relative;
+  width: 23px;
+  height: 21px;
+}
+.restaurants .coeur {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+.restaurants .coeur-plein {
+  opacity: 0;
+  transition: opacity 1s;
+}
+.restaurants .coeur-plein:hover {
+  opacity: 1;
+}
 .restaurants .restaurant-nom-icone {
   display: flex;
   justify-content: space-between;

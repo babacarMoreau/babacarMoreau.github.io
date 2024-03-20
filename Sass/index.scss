@@ -43,7 +43,6 @@ header {
     align-items:center;
     gap:17px;
 
-
     input{
 
         background-color: #EAEAEA;
@@ -225,6 +224,31 @@ header {
         color:black;
 
     }
+
+    .deux-coeurs {
+
+        position: relative;
+        width:23px;
+        height:21px;
+    }
+
+    .coeur{
+        position:absolute;
+        right:5px;
+        top:5px;
+    }
+
+    .coeur-plein{
+
+       opacity: 0;
+       transition : opacity 1s ;
+    }
+
+    .coeur-plein:hover{
+
+        opacity: 1;
+    }
+
 
     .restaurant-nom-icone{
 
