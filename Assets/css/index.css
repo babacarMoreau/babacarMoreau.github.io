@@ -207,6 +207,17 @@ header img {
   flex-direction: column;
   gap: 20px;
   padding-bottom: 60px;
+  /*
+    .coeur-plein{
+
+       opacity: 0;
+       transition : opacity 1s ;
+    }
+
+    .coeur-plein:active{
+
+        opacity: 1;
+    } */
 }
 @media screen and (min-width: 1024px) {
   .restaurants {
@@ -259,12 +270,19 @@ header img {
   right: 5px;
   top: 5px;
 }
+@keyframes anim-coeur {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .restaurants .coeur-plein {
   opacity: 0;
-  transition: opacity 1s;
 }
 .restaurants .coeur-plein:hover {
-  opacity: 1;
+  animation: anim-coeur 1s both;
 }
 .restaurants .restaurant-nom-icone {
   display: flex;

@@ -230,6 +230,7 @@ header {
         position: relative;
         width:23px;
         height:21px;
+
     }
 
     .coeur{
@@ -238,16 +239,38 @@ header {
         top:5px;
     }
 
+    @keyframes anim-coeur {
+
+        from{
+            opacity:0;
+        }
+
+        to{
+            opacity:1;
+        }
+    }
+
+    .coeur-plein{
+
+        opacity:0;
+    }
+
+    .coeur-plein:hover{
+
+        animation: anim-coeur 1s both;
+    }
+
+  /*
     .coeur-plein{
 
        opacity: 0;
        transition : opacity 1s ;
     }
 
-    .coeur-plein:hover{
+    .coeur-plein:active{
 
         opacity: 1;
-    }
+    } */
 
 
     .restaurant-nom-icone{
