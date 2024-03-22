@@ -1,0 +1,81 @@
+
+//Animation du coeur
+@keyframes anim-coeur {
+
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+}
+
+//Animation loader
+@keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+      
+    }
+    100% {
+      transform: rotate(360deg);
+    
+  }
+}
+
+@keyframes loader-container{
+
+    0%{
+        opacity:1;
+
+    }
+
+    100%{
+
+        display:none;
+        opacity:0;
+    }
+
+}
+
+
+@keyframes main-container{
+
+    0%{
+        opacity:0;
+
+    }
+
+    100%{
+        opacity:1;
+
+    }
+}
+
+
+@keyframes anim-menu{
+
+    0%{
+        transform: translateX(-1500px);
+        opacity:0.2;
+
+    }
+
+    50%{
+
+        opacity:0.5;
+    }
+
+    90%{
+
+        transform: translateX(25px);
+        opacity:0.7;
+    }
+
+    100%{
+
+        transform: translateX(0px);
+        opacity:1;
+    }
+
+}

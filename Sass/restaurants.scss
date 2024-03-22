@@ -2,6 +2,7 @@
 @import 'variables';
 @import 'footer';
 @import 'placeholder';
+@import'keyframes';
 
 *{
     margin:0;
@@ -113,6 +114,17 @@ main{
       padding:15px;
       margin-left: 10px;
       margin-right: 10px;
+
+      animation: anim-menu $anim-apparition-plats both;
+
+      @for $i from 1 through 10{
+
+            &--#{$i} {
+
+                animation-delay: $anim-delay * $i;
+            }
+      }
+
 
    } 
 

@@ -3,12 +3,45 @@
 @import 'footer';
 @import 'mixins_media_queries';
 @import 'placeholder';
+@import 'keyframes';
 
 *{
     margin:0;
     font-family: 'Roboto', sans-serif;
 }
 
+#loader-container{
+
+    position:fixed;
+    z-index:9999;
+    width:100vw;
+    height:100vh;
+
+    animation: loader-container 4s both;
+
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    position :absolute;
+    top:50%;
+    left:50%;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fcf;
+    border-color: #fcf transparent #fcf transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+
+ 
 
 body{
     display:flex;
@@ -20,6 +53,10 @@ body{
     width:100%;
     max-width: 1440px;
     box-sizing: border-box;
+    opacity:0;
+
+    animation: main-container 3s 1s both;
+    
 }
 
 header {
@@ -239,17 +276,6 @@ header {
         top:5px;
     }
 
-    @keyframes anim-coeur {
-
-        from{
-            opacity:0;
-        }
-
-        to{
-            opacity:1;
-        }
-    }
-
     .coeur-plein{
 
         opacity:0;
@@ -259,18 +285,6 @@ header {
 
         animation: anim-coeur 1s both;
     }
-
-  /*
-    .coeur-plein{
-
-       opacity: 0;
-       transition : opacity 1s ;
-    }
-
-    .coeur-plein:active{
-
-        opacity: 1;
-    } */
 
 
     .restaurant-nom-icone{

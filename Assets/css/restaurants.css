@@ -74,6 +74,56 @@ main button::after {
   transition: opacity 500ms, box-shadow 500ms;
 }
 
+@keyframes anim-coeur {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader-container {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
+@keyframes main-container {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes anim-menu {
+  0% {
+    transform: translateX(-1500px);
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  90% {
+    transform: translateX(25px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
 * {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -160,6 +210,37 @@ main .card {
   padding: 15px;
   margin-left: 10px;
   margin-right: 10px;
+  animation: anim-menu 1000ms both;
+}
+main .card--1 {
+  animation-delay: 100ms;
+}
+main .card--2 {
+  animation-delay: 200ms;
+}
+main .card--3 {
+  animation-delay: 300ms;
+}
+main .card--4 {
+  animation-delay: 400ms;
+}
+main .card--5 {
+  animation-delay: 500ms;
+}
+main .card--6 {
+  animation-delay: 600ms;
+}
+main .card--7 {
+  animation-delay: 700ms;
+}
+main .card--8 {
+  animation-delay: 800ms;
+}
+main .card--9 {
+  animation-delay: 900ms;
+}
+main .card--10 {
+  animation-delay: 1000ms;
 }
 main .entrées, main .plats, main .desserts {
   display: flex;

@@ -12,3 +12,7 @@ $breakpoints: (
   "desktop-up": 1024px,
 );
 
+
+$anim-apparition-plats: 1000ms;
+
+$anim-delay: $anim-apparition-plats / 10;
