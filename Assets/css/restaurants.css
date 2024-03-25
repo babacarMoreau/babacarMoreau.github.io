@@ -245,12 +245,9 @@ main .zone-menu .card--9 {
 main .zone-menu .card--10 {
   animation-delay: 1000ms;
 }
-main .zone-menu .card .nom-menu {
+main .zone-menu .card p {
   padding: 15px;
   flex: 1;
-  overflow: hidden;
-}
-main .zone-menu .card .nom-menu p {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
