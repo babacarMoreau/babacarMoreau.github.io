@@ -76,23 +76,10 @@ main{
 
     @include media-min("desktop-up"){
            
-       width:70%;
+       max-width: 1055px;  //width: 70%;
        margin:auto;
 
     }   
-
-
-    h1{
-        font-family: "Shrikhand", serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 25px;  //28
-    }
-
-    h5{
-        font-style: normal;
-        font-weight: 300;
-    }
 
     .section-titre-restaurant{
 
@@ -100,56 +87,138 @@ main{
         justify-content: center;
         gap:25px;
         padding:32px 17px 0px 17px;
+
+        h1{
+            font-family: "Shrikhand", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 25px;  
+        }
         
     }
 
-   .card{
+    .zone-menu{
 
-      display:flex;  
-      justify-content: space-between;
-      align-items:flex-end;
-      border-radius: 15.043px;
-      background-color: #fff;
-      box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.10);
-      padding:15px;
-      margin-left: 10px;
-      margin-right: 10px;
+        width:60%;
+        margin:auto;
 
-      animation: anim-menu $anim-apparition-plats both;
-
-      @for $i from 1 through 10{
-
-            &--#{$i} {
-
-                animation-delay: $anim-delay * $i;
-            }
-      }
-
-
-   } 
-
-   .entrées, .plats, .desserts{
-
-    display:flex;
-    flex-direction:column;
-    gap:12px;
-
-   }
-
-   .titre-section{
-
-    display:flex;
-    gap:5px;
-    flex-direction:column;
-    margin-left: 10px;
-
-        img{
-
-            width:40px;
+        h5{
+            font-style: normal;
+            font-weight: 300;
         }
+    
+       .card{
+    
+          display:flex;  
+          //justify-content: space-between;
+          align-items:flex-end;
+          border-radius: 15.043px;
+          background-color: #fff;
+          box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.10);
+          //padding:15px;
+          margin-left: 10px;
+          margin-right: 10px;
+          overflow: hidden;
+    
+          animation: anim-menu $anim-apparition-plats both;
+    
+          @for $i from 1 through 10{
+    
+                &--#{$i} {
+    
+                    animation-delay: $anim-delay * $i;
+                }
+          }
+    
+            .nom-menu{
+    
+                padding:15px;
+                flex:1;
+                overflow: hidden;
 
-   }
+                p{
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+                
+            }
+    
+            .euro{
+    
+                padding-bottom: 15px;
+                margin-right:10px;
+                
+                
+            }
+    
+            .menu-check{
+    
+                width:0px;
+                height: 66.8px;
+                border-top-right-radius: 25%;
+                border-bottom-right-radius: 25%;
+                background-color:#99E2D0 ;
+                color:#99E2D0;
+                display:flex;
+                justify-content: center;
+                align-items:center;
+                transition : width 500ms;
 
+            
+    
+                i{
+                    background-color: white;
+                    border-radius: 50%;
+                    padding:3px;
+                    margin-left:18.5px;
+                    transition: margin-left 500ms;
+                    
+                }
+        
+            }
+    
+            &:hover {
+
+                .menu-check{
+                
+                    width:59px;
+
+                    i{
+                        margin-left: 0px;
+                    }
+                }
+
+            }
+                
+    
+        } 
+    
+       .entrées, .plats, .desserts{
+    
+        display:flex;
+        flex-direction:column;
+        gap:12px;
+    
+       }
+    
+       .titre-section{
+    
+        display:flex;
+        gap:5px;
+        flex-direction:column;
+        margin-left: 10px;
+    
+            img{
+    
+                width:40px;
+            }
+    
+       }
+    
+    }
+
+   
    button{
 
     border-radius: 25px;
@@ -165,6 +234,7 @@ main{
     @extend %animation-button;
 
    }
+  
 
 }
 

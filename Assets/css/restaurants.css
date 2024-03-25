@@ -180,19 +180,9 @@ main {
 }
 @media screen and (min-width: 1024px) {
   main {
-    width: 70%;
+    max-width: 1055px;
     margin: auto;
   }
-}
-main h1 {
-  font-family: "Shrikhand", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 25px;
-}
-main h5 {
-  font-style: normal;
-  font-weight: 300;
 }
 main .section-titre-restaurant {
   display: flex;
@@ -200,60 +190,112 @@ main .section-titre-restaurant {
   gap: 25px;
   padding: 32px 17px 0px 17px;
 }
-main .card {
+main .section-titre-restaurant h1 {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+main .zone-menu {
+  width: 60%;
+  margin: auto;
+}
+main .zone-menu h5 {
+  font-style: normal;
+  font-weight: 300;
+}
+main .zone-menu .card {
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
   border-radius: 15.043px;
   background-color: #fff;
   box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
-  padding: 15px;
   margin-left: 10px;
   margin-right: 10px;
+  overflow: hidden;
   animation: anim-menu 1000ms both;
 }
-main .card--1 {
+main .zone-menu .card--1 {
   animation-delay: 100ms;
 }
-main .card--2 {
+main .zone-menu .card--2 {
   animation-delay: 200ms;
 }
-main .card--3 {
+main .zone-menu .card--3 {
   animation-delay: 300ms;
 }
-main .card--4 {
+main .zone-menu .card--4 {
   animation-delay: 400ms;
 }
-main .card--5 {
+main .zone-menu .card--5 {
   animation-delay: 500ms;
 }
-main .card--6 {
+main .zone-menu .card--6 {
   animation-delay: 600ms;
 }
-main .card--7 {
+main .zone-menu .card--7 {
   animation-delay: 700ms;
 }
-main .card--8 {
+main .zone-menu .card--8 {
   animation-delay: 800ms;
 }
-main .card--9 {
+main .zone-menu .card--9 {
   animation-delay: 900ms;
 }
-main .card--10 {
+main .zone-menu .card--10 {
   animation-delay: 1000ms;
 }
-main .entrées, main .plats, main .desserts {
+main .zone-menu .card .nom-menu {
+  padding: 15px;
+  flex: 1;
+  overflow: hidden;
+}
+main .zone-menu .card .nom-menu p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+main .zone-menu .card .euro {
+  padding-bottom: 15px;
+  margin-right: 10px;
+}
+main .zone-menu .card .menu-check {
+  width: 0px;
+  height: 66.8px;
+  border-top-right-radius: 25%;
+  border-bottom-right-radius: 25%;
+  background-color: #99E2D0;
+  color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: width 500ms;
+}
+main .zone-menu .card .menu-check i {
+  background-color: white;
+  border-radius: 50%;
+  padding: 3px;
+  margin-left: 18.5px;
+  transition: margin-left 500ms;
+}
+main .zone-menu .card:hover .menu-check {
+  width: 59px;
+}
+main .zone-menu .card:hover .menu-check i {
+  margin-left: 0px;
+}
+main .zone-menu .entrées, main .zone-menu .plats, main .zone-menu .desserts {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-main .titre-section {
+main .zone-menu .titre-section {
   display: flex;
   gap: 5px;
   flex-direction: column;
   margin-left: 10px;
 }
-main .titre-section img {
+main .zone-menu .titre-section img {
   width: 40px;
 }
 main button {
