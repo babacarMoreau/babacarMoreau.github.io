@@ -178,7 +178,7 @@ main {
   flex-direction: column;
   gap: 40px;
   position: relative;
-  top: -59px;
+  bottom: 40px;
 }
 @media screen and (min-width: 1024px) {
   main {
@@ -213,6 +213,11 @@ main .section-titre-restaurant .coeur-plein {
 }
 main .section-titre-restaurant .coeur-plein:hover {
   animation: anim-coeur 1s both;
+}
+main .zone-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 @media screen and (min-width: 1024px) {
   main .zone-menu {
@@ -326,4 +331,5 @@ main button {
   font-weight: 500;
   margin: auto;
   border: none;
+  margin-bottom: 40px;
 }

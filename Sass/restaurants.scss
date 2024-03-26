@@ -72,11 +72,11 @@ main{
     flex-direction: column;
     gap:40px;
     position:relative;
-    top:-59px;
+    bottom:40px;
 
     @include media-min("desktop-up"){
            
-       max-width: 1055px;  //width: 70%;
+       max-width: 1055px;  
        margin:auto;
 
     }   
@@ -123,6 +123,9 @@ main{
     .zone-menu{
 
         
+        display:flex;
+        flex-direction: column;
+        gap:40px;
 
         @include media-min("desktop-up"){
            
@@ -254,6 +257,7 @@ main{
     font-weight: 500;
     margin: auto;
     border:none;
+    margin-bottom: 40px;
 
     @extend %animation-button;
 
