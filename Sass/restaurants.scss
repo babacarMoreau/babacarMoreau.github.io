@@ -94,6 +94,29 @@ main{
             font-style: normal;
             font-size: 25px;  
         }
+
+        .deux-coeurs {
+
+            position: relative;
+            width:23px;
+            height:21px;
+        }
+
+        .coeur{
+            position:absolute;
+            right:5px;
+            top:5px;
+        }
+
+        .coeur-plein{
+
+            opacity:0;
+        }
+    
+        .coeur-plein:hover{
+    
+            animation: anim-coeur 1s both;
+        }
         
     }
 

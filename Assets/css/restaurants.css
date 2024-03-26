@@ -198,6 +198,22 @@ main .section-titre-restaurant h1 {
   font-style: normal;
   font-size: 25px;
 }
+main .section-titre-restaurant .deux-coeurs {
+  position: relative;
+  width: 23px;
+  height: 21px;
+}
+main .section-titre-restaurant .coeur {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+main .section-titre-restaurant .coeur-plein {
+  opacity: 0;
+}
+main .section-titre-restaurant .coeur-plein:hover {
+  animation: anim-coeur 1s both;
+}
 @media screen and (min-width: 1024px) {
   main .zone-menu {
     width: 60%;
