@@ -18,6 +18,9 @@
     height:100vh;
 
     animation: loader-container 4s both;
+    display:flex;
+    justify-content: center;
+    align-items:center;
 
 }
 
@@ -25,10 +28,7 @@
     display: inline-block;
     width: 80px;  
     height: 80px;
-    position :absolute;
-    top:50%;
-    left:50%;
-  }
+}
   .lds-dual-ring:after {
     content: " ";
     display: block;

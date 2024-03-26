@@ -94,9 +94,11 @@ main button::after {
   0% {
     opacity: 1;
   }
-  100% {
-    display: none;
+  95% {
     opacity: 0;
+  }
+  100% {
+    transform: scale(0);
   }
 }
 @keyframes main-container {
@@ -196,9 +198,11 @@ main .section-titre-restaurant h1 {
   font-style: normal;
   font-size: 25px;
 }
-main .zone-menu {
-  width: 60%;
-  margin: auto;
+@media screen and (min-width: 1024px) {
+  main .zone-menu {
+    width: 60%;
+    margin: auto;
+  }
 }
 main .zone-menu h5 {
   font-style: normal;

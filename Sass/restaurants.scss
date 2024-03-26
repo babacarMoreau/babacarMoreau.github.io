@@ -99,8 +99,14 @@ main{
 
     .zone-menu{
 
-        width:60%;
-        margin:auto;
+        
+
+        @include media-min("desktop-up"){
+           
+            width:60%;
+            margin:auto;
+     
+        }   
 
         h5{
             font-style: normal;
