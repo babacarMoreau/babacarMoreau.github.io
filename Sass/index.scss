@@ -23,7 +23,7 @@
 
 .lds-dual-ring {
     display: inline-block;
-    width: 80px;
+    width: 80px;  
     height: 80px;
     position :absolute;
     top:50%;
@@ -249,9 +249,9 @@ header {
         width: 80px;
         height: 29px;
         top:5%;
-        left:70%;
+        right:15px;
     }
- 
+   
      a {
         width:90%;
         margin: 0 18px;
@@ -259,15 +259,15 @@ header {
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
         text-decoration: none;
         color:black;
+    }  
 
-    }
+    
 
     .deux-coeurs {
 
         position: relative;
         width:23px;
         height:21px;
-
     }
 
     .coeur{
