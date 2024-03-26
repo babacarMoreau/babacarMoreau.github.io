@@ -123,6 +123,7 @@ main{
           margin-left: 10px;
           margin-right: 10px;
           overflow: hidden;
+          height:66.797px;
     
           animation: anim-menu $anim-apparition-plats both;
     
@@ -155,7 +156,7 @@ main{
             .menu-check{
     
                 width:0px;
-                height: 66.8px;
+                height: 100%;
                 border-top-right-radius: 25%;
                 border-bottom-right-radius: 25%;
                 background-color:#99E2D0 ;

@@ -217,6 +217,7 @@ main .zone-menu .card {
   margin-left: 10px;
   margin-right: 10px;
   overflow: hidden;
+  height: 66.797px;
   animation: anim-menu 1000ms both;
 }
 main .zone-menu .card--1 {
@@ -262,7 +263,7 @@ main .zone-menu .card .euro {
 }
 main .zone-menu .card .menu-check {
   width: 0px;
-  height: 66.8px;
+  height: 100%;
   border-top-right-radius: 25%;
   border-bottom-right-radius: 25%;
   background-color: #99E2D0;
