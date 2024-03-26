@@ -79,6 +79,15 @@ header {
     justify-content: center;
     align-items:center;
     gap:17px;
+    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    @include media-min("desktop-up"){
+           
+        box-shadow: none;
+
+    }  
+
+
 
     input{
 
@@ -98,6 +107,14 @@ header {
     align-items:center;
     background-color:$background-gray;
     padding:25px 15px 45px 15px;
+    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    @include media-min("desktop-up"){
+           
+        box-shadow: none;
+
+    }  
+    
 
     button{
 
