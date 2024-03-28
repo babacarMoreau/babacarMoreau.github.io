@@ -23,6 +23,7 @@
   }
 }
 
+//Animation de fermeture du loader
 @keyframes loader-container{
 
     0%{
@@ -55,7 +56,7 @@
     }
 }
 
-
+//Animation apparitions des plats des menu "entrees", "plats" et "desserts"
 @keyframes anim-menu{
 
     0%{

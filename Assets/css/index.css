@@ -51,15 +51,15 @@ footer .gap {
   }
 }
 
-.info-menu button {
+.info-menu .button {
   z-index: 1;
   position: relative;
 }
-.info-menu button:hover::after {
+.info-menu .button:hover::after {
   opacity: 1;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
 }
-.info-menu button::after {
+.info-menu .button::after {
   content: "";
   border-radius: 25px;
   position: absolute;
@@ -216,13 +216,13 @@ header img {
     box-shadow: none;
   }
 }
-.info-menu button {
+.info-menu .button {
   border-radius: 25px;
   background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
   color: white;
   padding: 13px 18.75px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  border: none;
+  text-decoration: none;
 }
 .info-menu p {
   font-size: 15px;

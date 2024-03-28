@@ -71,8 +71,9 @@ main{
     display:flex;
     flex-direction: column;
     gap:40px;
-    position:relative;
     bottom:40px;
+    position: relative;
+    
 
     @include media-min("desktop-up"){
            
