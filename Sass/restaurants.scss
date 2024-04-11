@@ -71,14 +71,18 @@ main{
     display:flex;
     flex-direction: column;
     gap:40px;
-    bottom:40px;
+    //bottom:40px;
+    //position: relative;
+    margin-top:-40px;
+    z-index: 2;
     position: relative;
+
     
 
     @include media-min("desktop-up"){
            
        max-width: 1055px;  
-       margin:auto;
+       margin:-40px auto 0;
 
     }   
 

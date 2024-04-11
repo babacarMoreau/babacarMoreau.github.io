@@ -177,13 +177,14 @@ main {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  bottom: 40px;
+  margin-top: -40px;
+  z-index: 2;
   position: relative;
 }
 @media screen and (min-width: 1024px) {
   main {
     max-width: 1055px;
-    margin: auto;
+    margin: -40px auto 0;
   }
 }
 main .section-titre-restaurant {
